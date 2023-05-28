@@ -16,7 +16,7 @@ class Utils:
     @staticmethod
     def standardize(df,target):
         for name in df.drop(target,axis=1).columns:
-            df[name] = (df[name] - df[name].mean())/df[name].std()
+            df[name] = (df[name] - df[name].min())/(df[name].max() - df[name].min())
         return df
     @staticmethod
     def split(df, size):
