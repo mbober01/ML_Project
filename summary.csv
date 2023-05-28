@@ -1,0 +1,5 @@
+model;MAE;RMSE
+random_forest;60987.63;99166.18
+knn;78325.55;125041.34
+drzewo decyzyjne;89330.41;139102.91
+regresja liniowa;105855.72;149260.54
